@@ -60,7 +60,7 @@ Garantizando que un Legajo pertenece a un único Empleado.
 
 ---
 
-# 🗄 Base de Datos
+# Base de Datos
 
 ## **Script de Creación (01_create_empresa_empleados.sql)**
 
@@ -182,7 +182,7 @@ Run → Run Project
 
 ---
 
-# 🧪 Pruebas realizadas
+# Pruebas realizadas
 
 ✔ CRUD completo de empleados  
 ✔ CRUD de legajos  
@@ -194,25 +194,25 @@ Run → Run Project
 
 ---
 
-# 📎 UML
+# UML
 
 En informe
 
 ---
 
-# 📹 Video
+# Video
 
 https://drive.google.com/drive/u/0/folders/1AGt46bpNN76pyaj57641Ji5463Tgb36-
 
 ---
 
-# 🧑‍💻 Integrantes
+# Integrantes
 
 Alejandro Pedrosa, Agustin Hurtado, Luciano De La Rubia, Bruno Pighin. 
 
 ---
 
-# 🏁 Conclusión
+# Conclusión
 
 El proyecto cumple:
 
