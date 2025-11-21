@@ -1,9 +1,9 @@
-# 🚀 Trabajo Final Integrador – Programación 2  
+# Trabajo Final Integrador – Programación 2  
 ## Aplicación Java – Relación 1:1 Empleado → Legajo + JDBC + DAO + MySQL
 
 ---
 
-## 📌 Descripción del Proyecto
+## Descripción del Proyecto
 
 Este proyecto implementa una aplicación Java de consola que gestiona empleados y sus legajos asociados mediante una **relación unidireccional 1 a 1**:
 
@@ -26,7 +26,7 @@ Este trabajo corresponde al **Trabajo Final Integrador de Programación 2 (UTN)*
 
 ---
 
-## 🏛 Arquitectura del Proyecto
+## Arquitectura del Proyecto
 
 ```
 tp-integrador/
@@ -41,7 +41,7 @@ tp-integrador/
 
 ---
 
-## 🔗 Relación del Dominio
+## Relación del Dominio
 
 ### **Empleado (A) → Legajo (B)**  
 Relación **1 a 1 unidireccional**  
@@ -63,7 +63,7 @@ Garantizando que un Legajo pertenece a un único Empleado.
 
 # 🗄 Base de Datos
 
-## **1️⃣ Script de Creación (01_create_empresa_empleados.sql)**
+## **Script de Creación (01_create_empresa_empleados.sql)**
 
 ```sql
 DROP DATABASE IF EXISTS empresa_empleados;
@@ -100,7 +100,7 @@ CREATE INDEX idx_legajo_nro ON legajos(nro_legajo);
 
 ---
 
-## **2️⃣ Script de Datos Iniciales (02_seed_empresa_empleados.sql)**
+## **Script de Datos Iniciales (02_seed_empresa_empleados.sql)**
 
 ```sql
 USE empresa_empleados;
@@ -116,7 +116,7 @@ INSERT INTO legajos (nro_legajo, categoria, estado, fecha_alta, observaciones, e
 
 ---
 
-# ⚙️ Configuración de la Conexión a la BD
+# Configuración de la Conexión a la BD
 
 Archivo: `config/DatabaseConnection.java`
 
@@ -127,15 +127,9 @@ private static final String PASSWORD = ""; // según tu MySQL local
 private static final String DRIVER = "com.mysql.cj.jdbc.Driver";
 ```
 
-**IMPORTANTE:**  
-Debes tener agregado en el proyecto el driver **MySQL Connector/J** (`mysql-connector-j-8.x.x.jar`).
-
-En NetBeans:  
-→ Right click Project → Properties → Libraries → Add JAR/Folder
-
 ---
 
-# 🔄 Transacciones y Reglas de Negocio
+# Transacciones y Reglas de Negocio
 
 La operación de **crear un empleado con su legajo** es transaccional:
 
@@ -151,7 +145,7 @@ Garantizando **atomicidad total**.
 
 ---
 
-# 🖥 Cómo Ejecutar la Aplicación
+# Cómo Ejecutar la Aplicación
 
 ## Requisitos
 - Java 17 o superior
@@ -171,7 +165,7 @@ Run → Run Project
 
 ---
 
-# 📋 Funciones del Menú
+# Funciones del Menú
 
 ```
 1. Crear empleado
@@ -203,19 +197,22 @@ Run → Run Project
 
 # 📎 UML
 
-(agregar `uml.png` aquí cuando esté generado)
+En informe
 
 ---
 
 # 📹 Video
 
-(agregar enlace cuando se grabe)
+https://drive.google.com/drive/u/0/folders/1AGt46bpNN76pyaj57641Ji5463Tgb36-
 
 ---
 
 # 🧑‍💻 Integrantes
 
-(agregar nombres y roles)
+Alejandro Pedrosa: Desarrollo general, lógica de negocio, manejo transaccional . 
+Agustin Hurtado: Diseño del modelo entidad-relación, scripts SQL y pruebas sobre base de datos.
+Luciano de la Rubia: Desarrollo del menú, interacción con usuario y manejo de errores
+Bruno Pighin: Testing global, documentación formal e integración del video de presentación
 
 ---
 
