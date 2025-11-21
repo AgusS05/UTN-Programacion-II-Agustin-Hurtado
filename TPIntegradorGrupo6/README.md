@@ -36,7 +36,6 @@ tp-integrador/
 ├── service/         → Reglas de negocio y transacciones
 ├── config/          → Conexión a MySQL (DatabaseConnection)
 ├── tpintegrador/    → AppMenu, Handlers y Main
-└── sql/             → Scripts de creación y seed
 ```
 
 ---
@@ -209,10 +208,7 @@ https://drive.google.com/drive/u/0/folders/1AGt46bpNN76pyaj57641Ji5463Tgb36-
 
 # 🧑‍💻 Integrantes
 
-Alejandro Pedrosa: Desarrollo general, lógica de negocio, manejo transaccional . 
-Agustin Hurtado: Diseño del modelo entidad-relación, scripts SQL y pruebas sobre base de datos.
-Luciano de la Rubia: Desarrollo del menú, interacción con usuario y manejo de errores
-Bruno Pighin: Testing global, documentación formal e integración del video de presentación
+Alejandro Pedrosa, Agustin Hurtado, Luciano De La Rubia, Bruno Pighin. 
 
 ---
 
